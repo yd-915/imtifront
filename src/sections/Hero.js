@@ -32,16 +32,17 @@ const Hero = () => {
             ].join(' ')}
           >
             <nav className="flex flex-col w-full space-x-0 space-y-3 text-center md:space-y-0 md:space-x-3 md:flex-row">
-              <a className="px-5 py-2 rounded text-violet-500 hover:bg-white-100">Guides</a>
-              <a className="px-5 py-2 rounded text-violet-500 hover:bg-white-100">Pricing</a>
-              <a className="px-5 py-2 rounded text-violet-500 hover:bg-white-100">Blog</a>
+              <a className="px-5 py-2 rounded text-violet-400 hover:bg-white-100">About</a>
+              <a className="px-5 py-2 rounded text-violet-400 hover:bg-white-100">Pricing</a>
+              <a className="px-5 py-2 rounded text-violet-400 hover:bg-white-100">Testimonials</a>
+         
             </nav>
             <Link
               href={
                 sessionStatus === 'authenticated' ? '/account' : '/auth/login'
               }
             >
-              <a className="w-full px-5 py-2 text-center text-white bg-violet-600 rounded shadow hover:bg-white-500">
+              <a className="w-full px-5 py-2 text-center text-white bg-violet-400 rounded shadow hover:bg-white-500">
                 {sessionStatus === 'authenticated'
                   ? 'Go to Dashboard'
                   : 'Login'}
@@ -52,15 +53,15 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-center pt-10 mx-auto md:w-3/5">
           <h1 className="text-6xl font-extrabold text-center">
             <span className="block text-white">Build. Test. Sell.</span>
-            <span className="block text-violet-600">The Ultimate API Platform Is Here!</span>
+            <span className="block text-violet-400">The Ultimate API Platform Is Here!</span>
           </h1>
           
         </div>
         <div className="flex items-center justify-center space-x-5">
-          <a className="px-10 py-3 text-center text-white bg-violet-600 rounded shadow hover:bg-white-500 text-violet">
+          <a className="px-10 py-3 text-center text-white bg-violet-400 rounded shadow hover:bg-white-500 text-violet">
             Begin
           </a>
-          <a className="px-10 py-3 text-center text-violet-600 rounded shadow hover:bg-white-50">
+          <a className="px-10 py-3 text-center text-violet-400 rounded shadow hover:bg-white-50">
             Get Demo
           </a>
         </div>
